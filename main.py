@@ -10,7 +10,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 url = sys.argv[1]
 
-# Use beuatiful soup to get the contents of a webpage
+# Use beautiful soup to get the contents of a webpage
 def page_contents(url):
   res = requests.get(url)
   soup = BeautifulSoup(res.content, 'html.parser')
